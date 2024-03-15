@@ -1,0 +1,384 @@
+/*------ font-family: 'Noto Sans JP', sans-serif; ------*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+
+/* font-family: 'Lateef', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: black;
+}
+
+/* -------- N A V I G A T I O N  B A R --------- */
+
+.main-top-navbar-div {
+    width: 100%;
+    height: 4.5em;
+    position: absolute;
+    top: 0;
+}
+
+.main-top-navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* -------- Box 1 --------- */
+
+.top-navbar-box-1 {
+    width: 16%;
+    height: 100%;
+}
+
+.main-logo-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-logo-box img {
+    margin-top: 11px;
+    width: 60%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-logo-box img:hover {
+    transform: scale(104%);
+}
+
+/* -------- Box 2 --------- */
+
+.top-navbar-box-2 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.top-navbar-box-2 ul {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-navbar-box-2 ul li {
+    width: 18%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-navbar-box-2 ul li a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: rgb(215, 215, 215);
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.top-navbar-box-2 ul li a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 26px;
+    transform: scale(0);
+    transform-origin: top left;
+    width: 100%;
+    height: 2px;
+    background-color: aliceblue;
+    transition: all 0.4s ease-in-out;
+}
+
+.top-navbar-box-2 ul li a:hover::before {
+    transform: scale(1);
+}
+
+.top-navbar-box-2 ul li a:hover {
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+/* -------- Box 3 --------- */
+
+.top-navbar-box-3 {
+    width: 18%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-box-3-div-1 {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search-icon-circle {
+    width: 54%;
+    height: 54%;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: #6A0AFA;
+}
+
+.search-icon-circle svg {
+    width: 50%;
+    height: 50%;
+    font-size: 20%;
+    fill: rgb(228, 228, 228);
+}
+
+.search-icon-circle:hover {
+    box-shadow: 0 0 12px #6a0afa8d;
+}
+
+.navbar-box-3-div-2 {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sign-up-top-navbar-btn {
+    width: 76%;
+    height: 52%;
+    margin-left: 8px;
+    padding-bottom: 2px;
+    border-radius: 24px;
+    font-size: 1.1em;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+    text-align: center;
+    outline: none;
+    border: none;
+    color: rgb(228, 228, 228);
+    font-family: 'Noto Sans JP', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    background-color: #6A0AFA;
+}
+
+.sign-up-top-navbar-btn:hover {
+    box-shadow: 0 0 12px #6a0afa8d;
+}
+
+
+/* -------- H E A D E R -------- */
+
+.main-header-container {
+    width: 100%;
+    height: 89%;
+    position: absolute;
+    bottom: 0;
+}
+
+.main-header-container .main-top-header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------ Box 1 ------ */
+
+.main-header-box-1 {
+    width: 100%;
+    height: 92%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------ Box 1 Div 1------ */
+
+.header-box-1-div-1 {
+    width: 51%;
+    height: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-box-1-div-1-1 {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-box-1-div-1-1 h1 {
+    width: 90%;
+    margin-bottom: 30px;
+    line-height: 0.9em;
+    font-size: 5.6em;
+    font-weight: 600;
+    font-family: 'Lateef', serif;
+    color: rgb(238, 238, 238);
+    word-spacing: 8px;
+    letter-spacing: 1px;
+}
+
+.header-box-1-div-1-1 h1 span {
+    color: #d26500;
+}
+
+.header-box-1-div-1-1 p {
+    width: 90%;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    word-spacing: 2px;
+    font-size: 1.4em;
+    color: rgb(145, 145, 145);
+    line-height: 1.5em;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.header-box-1-div-1-2 {
+    margin-top: 1.2em;
+    width: 100%;
+    height: 20%;
+    color: rgb(224, 224, 224);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+
+.header-box-1-div-1-2 p {
+    width: 90%;
+    margin: 0 0 10px 32px;
+    font-size: 1.2em;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    word-spacing: 1px;
+}
+
+.header-box-1-div-1-2 button {
+    width: 7.9em;
+    height: 2.4em;
+    color: rgb(218, 218, 218);
+    border-radius: 8px;
+    font-size: 0.9em;
+    border: none;
+    letter-spacing: 0.3px;
+    margin-left: 32px;
+    background-color: #6A0AFA;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-box-1-div-1-2 button:hover {
+    box-shadow: 0 0 12px #6a0afa8d;
+}
+
+.header-box-1-div-1-2 span {
+    margin-left: 20px;
+    color: rgb(145, 145, 145);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.header-box-1-div-1-2 span:hover {
+    color: #ff8e25;
+    text-shadow: 0 0 12px #d2660088;
+}
+
+/* ------ Box 1 Div 2------ */
+
+.header-box-1-div-2 {
+    width: 48%;
+    height: 98%;
+}
+
+.header-main-img-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-main-img-container img {
+    width: 54em;
+    position: absolute;
+    top: -30px;
+    right: -110px;
+    transition: all 0.4s ease-in-out;
+    animation: img 4s infinite;
+}
+
+@keyframes img {
+    0% {
+        transform: translateY(2px);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+    100% {
+        transform: translateY(2px);
+    }
+}
+
+.header-main-img-container img:hover {
+    animation-play-state: paused;
+    width: 54.2em;
+    cursor: pointer;
+}
+
+/* ------ Box 2 ------ */
+
+.main-header-box-2 {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.main-header-box-2 p {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: rgb(112, 112, 112);
+}
